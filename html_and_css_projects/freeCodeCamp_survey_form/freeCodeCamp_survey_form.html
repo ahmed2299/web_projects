@@ -70,7 +70,11 @@
       .text-center{
         text-align: center;
       }
-
+      .clue{
+          margin-left: 0.25rem;
+          font-size: 0.9rem;
+          color: #e4e4e4;
+      }
       form{
         padding: 2.5rem 0.625rem;
         border-radius: 0.25rem;
@@ -120,6 +124,15 @@
           <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
       </div>
 
+      <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" id="number" name="age" class="form-control" min="10" max="99" placeholder="Age">
+      </div>
   </form>
 </div>
 
