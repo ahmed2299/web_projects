@@ -59,7 +59,7 @@ img{
 
 .price{
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .menu ul{
@@ -95,7 +95,7 @@ img{
 .feature{
     background: white;
     padding: 10px;
-    border: 2px solid white;
+    border: 1px solid white;
     text-align: center;
     box-shadow: 0 0 4px rgba(0,0,0,0.6);
 }
@@ -142,12 +142,16 @@ img{
     /*background: linear-gradient(to var(--direction, left), var(#ffc600), transparent);*/
 }
 
-/*.gallery h2:after{*/
-/*    --direction:right;*/
-/*}*/
+.gallery h2:after{
+    --direction:right;
+}
 @media (max-width: 1000px) {
     .menu{
         perspective: 800px;
+    }
+    [aria-controls="menu-list"]{
+        display: block;
+        margin-bottom: 10px;
     }
     .menu ul{
         max-height: 0;
@@ -169,6 +173,7 @@ img{
     [aria-expanded="true"] .open {
         display: none;
     }
+}
 
     @media (max-width: 700px) {
         .top{
@@ -183,4 +188,3 @@ img{
             grid-template-areas: "hero cta1 cta2";
         }
     }
-}
