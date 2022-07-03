@@ -13,7 +13,9 @@ import * as serviceWorker from './serviceWorker'
 const store=createStore(reducer)
 
 ReactDOM.render(
-    <App></App>,
-document.getElementById('root'))
+    <Provider store={store}>
+        <App/>
+    </Provider>,
+    document.getElementById('root'))
 
 serviceWorker.unregister()
